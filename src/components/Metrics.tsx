@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import useFadeIn from "hooks/useFadeIn";
+import useCountUp from "hooks/useCountUp";
 import { FadeInProps } from "types/fadeIn";
 import { METRICS_COLOR } from "constants/colors";
 
@@ -25,17 +26,20 @@ const MetricItem = styled.div`
 
 const Metrics: React.FC = () => {
   const [opacity, transY] = useFadeIn();
+  const userCount = useCountUp(350);
+  const reviewCount = useCountUp(21);
+  const storeCount = useCountUp(650);
 
   return (
     <MetricsContainer isVisible={opacity} transY={transY}>
       <MetricItem>
-        <strong>350만 명</strong>의 사용자
+        <strong>{userCount}만 명</strong>의 사용자
       </MetricItem>
       <MetricItem>
-        <strong>21만 개</strong>의 리뷰
+        <strong>{reviewCount}만 개</strong>의 리뷰
       </MetricItem>
       <MetricItem>
-        <strong>650만 개</strong>의 저장
+        <strong>{storeCount}만 개</strong>의 저장
       </MetricItem>
     </MetricsContainer>
   );
