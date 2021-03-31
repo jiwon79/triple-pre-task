@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { APP_STORE_IMG, PLAY_STORE_IMG } from "constants/images";
+import { AWARD_COLOR } from "constants/colors";
 
 const AwardContainer = styled.div`
   font-family: sans-serif;
   font-size: 14px;
   font-weight: bold;
-  color: rgba(58, 58, 58, 0.8);
+  color: ${AWARD_COLOR};
 `;
 
 const PlayStore = styled.div`

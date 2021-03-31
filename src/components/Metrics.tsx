@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { METRICS_COLOR } from "constants/colors";
 
 const MetricsContainer = styled.div`
   margin-bottom: 50px;
@@ -9,7 +10,7 @@ const MetricItem = styled.div`
   margin-bottom: 20px;
   font-family: sans-serif;
   font-size: 36px;
-  color: rgb(58, 58, 58);
+  color: ${METRICS_COLOR};
   letter-spacing: -1px;
 
   &:last-child {

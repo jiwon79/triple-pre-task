@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { TRIPLE_LOGO_IMG } from "constants/images";
+import { CONTENT_LOGO_COLOR } from "constants/colors";
 
 const ContentLogoContainer = styled.div`
   width: 400px;
@@ -12,7 +13,7 @@ const ContentLogoContainer = styled.div`
   text-align: center;
   font-family: sans-serif;
   font-size: 15px;
-  color: rgba(58, 58, 58, 0.7);
+  color: ${CONTENT_LOGO_COLOR};
 `;
 
 const ContentLogo: React.FC = () => {
