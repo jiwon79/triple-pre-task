@@ -5,8 +5,8 @@ const useCountUp = (target: number): number => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const animationDuration = 700;
-    const frameDuration = 700 / 60;
+    const animationDuration = 1000;
+    const frameDuration = 1000 / 60;
     const totalFrames = Math.round(animationDuration / frameDuration);
     let frame = 0;
 
