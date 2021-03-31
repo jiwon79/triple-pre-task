@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { easeInOutQuad } from "utils/easeInOutQuad";
+import { easeInOutQuad } from "utils/animation";
 
 const useCountUp = (target: number): number => {
   const [count, setCount] = useState(0);
