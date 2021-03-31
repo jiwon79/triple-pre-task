@@ -15,6 +15,7 @@ const ContentLogoContainer = styled.div<FadeInProps>`
   text-align: center;
   font-family: sans-serif;
   font-size: 15px;
+  font-weight: bold;
   color: ${CONTENT_LOGO_COLOR};
   opacity: ${(props) => (props.isVisible ? "1" : "0")};
   transform: translateY(${(props) => (props.transY ? "0px" : "10px")});
