@@ -1,5 +1,12 @@
-const App = () => {
-  return <div>App</div>;
+import React from "react";
+import GlobalStyles from "styles/globalStyles";
+
+const App: React.FC = () => {
+  return (
+    <div>
+      <GlobalStyles />
+    </div>
+  );
 };
 
 export default App;
