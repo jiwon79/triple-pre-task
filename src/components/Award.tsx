@@ -1,13 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import useFadeIn from "hooks/useFadeIn";
+import { FadeInProps } from "types/fadeIn";
 import { APP_STORE_IMG, PLAY_STORE_IMG } from "constants/images";
 import { AWARD_COLOR } from "constants/colors";
 
-const AwardContainer = styled.div`
+const AwardContainer = styled.div<FadeInProps>`
   font-family: sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: ${AWARD_COLOR};
+  opacity: ${(props) => (props.isVisible ? "1" : "0")};
+  transform: translateY(${(props) => (props.transY ? "0px" : "10px")});
+  transition: all 700ms ease-in-out 200ms;
 `;
 
 const PlayStore = styled.div`
@@ -28,8 +33,10 @@ const AppStore = styled(PlayStore)`
 `;
 
 const Awards: React.FC = () => {
+  const [opacity, transY] = useFadeIn();
+
   return (
-    <AwardContainer>
+    <AwardContainer isVisible={opacity} transY={transY}>
       <PlayStore>
         2018 구글 플레이스토어
         <br />
