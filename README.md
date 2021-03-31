@@ -29,7 +29,7 @@
    │  └─ animation.ts
    ├─ types            		타입 관리
    │  └─ fadeIn.ts
-   ├─ constants             상수 관리
+   ├─ constants                 상수 관리
    │  ├─ colors.ts
    │  └─ images.ts   
    ├─ styles           		전역 CSS 관리 (Reset.css)
