@@ -8,8 +8,9 @@ import GlobalStyles from "styles/globalStyles";
 const ResponsiveContainer = styled.div`
   display: flex;
   align-items: center;
-  min-width: 1200px;
+  width: 1200px;
   height: 100%;
+  margin: 0 auto;
 `;
 
 const ContentContainer = styled.div`
