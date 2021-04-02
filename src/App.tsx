@@ -8,16 +8,18 @@ import GlobalStyles from "styles/globalStyles";
 const ResponsiveContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 1200px;
+  min-width: 1200px;
   height: 100%;
-  margin: 0 auto;
 `;
 
 const ContentContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
+`;
+
+const InfoContainer = styled.div`
+  margin-left: 220px;
 `;
 
 const App: React.FC = () => {
@@ -28,10 +30,10 @@ const App: React.FC = () => {
         <ResponsiveContainer>
           <ContentContainer>
             <ContentLogo />
-            <div>
+            <InfoContainer>
               <Metrics />
               <Award />
-            </div>
+            </InfoContainer>
           </ContentContainer>
         </ResponsiveContainer>
       </main>
